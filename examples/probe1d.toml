@@ -1,0 +1,21 @@
+# Example of a configuration file of a probe
+
+# Frame information
+[frame]
+# Temperature calibration 
+temperature = [273.15, 1.0]
+[frame.calibrator]
+# Pressure calibration coefficients (polynomial)
+pressure = [0.0, 1.0]
+
+# This is a minimal
+[probe1d]
+type = "dantec1d"
+hardware = "1d_a/hard-250822-1030.txt"
+row = 1
+calibr = "1d_a/calibr-250822-1030.txt"
+decimal = "."
+
+
+
+
